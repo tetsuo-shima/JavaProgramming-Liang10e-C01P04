@@ -15,16 +15,8 @@ public class Main {
         System.out.println("a\t\ta^2\t\ta^3");
 
 	    for (int index = 1; index <= 4; index++){
-            System.out.printf("%d\t\t%d\t\t%d\n", index, square(index), cube(index));
+            System.out.printf("%d\t\t%d\t\t%d\n", index, (int)Math.pow(index,2), (int)Math.pow(index,3));
         }
-    }
-
-    public static int square(int number) {
-        return number * number;
-    }
-
-    public static int cube(int number) {
-        return number * number * number;
     }
 }
 
